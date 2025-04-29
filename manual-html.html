@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Completo de HTML</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&display=swap">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Manual Completo de HTML</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="redes.html">Redes</a></li>
+                <li><a href="cibertn.html">Ciberseguridad</a></li>
+                <li><a href="manual-html.html">Manual de HTML</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>¿Qué es HTML?</h2>
+        <p>HTML (HyperText Markup Language) es el lenguaje estándar utilizado para crear páginas web. Es el esqueleto de un sitio web y se utiliza para estructurar contenido y documentos en la web.</p>
+
+        <h3>Elementos Básicos de HTML</h3>
+        <ul>
+            <li><strong>&lt;html&gt;:</strong> Define un documento HTML.</li>
+            <li><strong>&lt;head&gt;:</strong> Contiene metadatos como título y enlaces a hojas de estilo.</li>
+            <li><strong>&lt;body&gt;:</strong> Contiene el contenido visible de la página.</li>
+            <li><strong>&lt;title&gt;:</strong> Establece el título de la página que aparece en la pestaña del navegador.</li>
+        </ul>
+
+        <h3>Estructura Básica de una Página HTML</h3>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;Mi Página Web&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Bienvenidos a mi página web&lt;/h1&gt;
+        &lt;p&gt;Este es un párrafo de texto&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+
+        <h3>Etiquetas Comunes en HTML</h3>
+        <ul>
+            <li><strong>&lt;a&gt;:</strong> Define un enlace a otra página o recurso.</li>
+            <li><strong>&lt;img&gt;:</strong> Inserta una imagen en la página.</li>
+            <li><strong>&lt;p&gt;:</strong> Define un párrafo.</li>
+            <li><strong>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;:</strong> Encabezados de diferentes niveles.</li>
+            <li><strong>&lt;ul&gt; y &lt;ol&gt;:</strong> Listas desordenadas y ordenadas.</li>
+            <li><strong>&lt;table&gt;:</strong> Crea tablas con filas y columnas.</li>
+        </ul>
+
+        <h3>Ejemplo de Enlace HTML</h3>
+        <pre>
+&lt;a href="https://www.ejemplo.com"&gt;Haz clic aquí&lt;/a&gt;
+        </pre>
+        <p><a href="https://www.ejemplo.com">Haz clic aquí</a></p>
+
+        <h3>Insertar una Imagen</h3>
+        <pre>
+&lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;
+        </pre>
+        <img src="img-ejemplo-imagen.jpg" alt="Ejemplo de imagen" width="400">
+
+        <h3>Listas</h3>
+        <h4>Lista Desordenada</h4>
+        <pre>
+&lt;ul&gt;
+    &lt;li&gt;Elemento 1&lt;/li&gt;
+    &lt;li&gt;Elemento 2&lt;/li&gt;
+    &lt;li&gt;Elemento 3&lt;/li&gt;
+&lt;/ul&gt;
+        </pre>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+
+        <h4>Lista Ordenada</h4>
+        <pre>
+&lt;ol&gt;
+    &lt;li&gt;Primer paso&lt;/li&gt;
+    &lt;li&gt;Segundo paso&lt;/li&gt;
+    &lt;li&gt;Tercer paso&lt;/li&gt;
+&lt;/ol&gt;
+        </pre>
+        <ol>
+            <li>Primer paso</li>
+            <li>Segundo paso</li>
+            <li>Tercer paso</li>
+        </ol>
+
+        <h3>Tablas</h3>
+        <pre>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Nombre&lt;/th&gt;
+        &lt;th&gt;Edad&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Juan&lt;/td&gt;
+        &lt;td&gt;30&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+        </pre>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>30</td>
+            </tr>
+        </table>
+
+        <h3>Formulario HTML</h3>
+        <pre>
+&lt;form&gt;
+    &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+    &lt;input type="text" id="nombre" name="nombre"&gt;
+    &lt;input type="submit" value="Enviar"&gt;
+&lt;/form&gt;
+        </pre>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            <input type="submit" value="Enviar">
+        </form>
+
+        <h3>Incorporar CSS (Hoja de Estilos)</h3>
+        <pre>
+&lt;style&gt;
+    body {
+        font-family: 'Lora', serif;
+        background-color: #f0f0f0;
+    }
+    h1 {
+        color: #2c3e50;
+    }
+&lt;/style&gt;
+        </pre>
+        <style>
+            body {
+                font-family: 'Lora', serif;
+                background-color: #f0f0f0;
+            }
+            h1 {
+                color: #2c3e50;
+            }
+        </style>
+
+        <h3>Agregar JavaScript</h3>
+        <pre>
+&lt;script&gt;
+    alert("¡Bienvenido a mi página!");
+&lt;/script&gt;
+        </pre>
+        <script>
+            alert("¡Bienvenido a mi página!");
+        </script>
+
+    </section>
+
+    <footer>
+        <p>© 2025 Manual Completo de HTML y Redes</p>
+    </footer>
+</body>
+</html>

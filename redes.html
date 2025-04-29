@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes de Computadoras</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&display=swap">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Redes de Computadoras</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="redes.html">Redes</a></li>
+                <li><a href="cibertn.html">Ciberseguridad</a></li>
+                <li><a href="manual-html.html">Manual de HTML</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>¿Qué es una Red de Computadoras?</h2>
+        <p>Una red de computadoras es un conjunto de equipos informáticos conectados entre sí que comparten recursos, datos y aplicaciones.</p>
+
+        <h2>Historia de las Redes</h2>
+        <p>Las redes nacen en la década de 1960 con ARPANET, proyecto impulsado por el Departamento de Defensa de los Estados Unidos, considerado precursor de Internet.</p>
+
+        <h3>Tipos de Redes</h3>
+        <ul>
+            <li><strong>LAN (Local Area Network):</strong> Red de área local.</li>
+            <li><strong>MAN (Metropolitan Area Network):</strong> Red de área metropolitana.</li>
+            <li><strong>WAN (Wide Area Network):</strong> Red de área extensa.</li>
+        </ul>
+
+        <h3>Topologías de Red</h3>
+        <img src="img-topologias.png" alt="Topologías de Red" width="400">
+        <ul>
+            <li><strong>Topología de Bus:</strong> Todos los dispositivos comparten un solo cable.</li>
+            <li><strong>Topología de Estrella:</strong> Todos los dispositivos están conectados a un nodo central (switch o hub).</li>
+            <li><strong>Topología de Anillo:</strong> Cada dispositivo tiene exactamente dos conexiones, formando un círculo.</li>
+            <li><strong>Topología de Malla:</strong> Todos los dispositivos están interconectados entre sí.</li>
+        </ul>
+
+        <h3>Dispositivos de Red</h3>
+        <table>
+            <tr><th>Dispositivo</th><th>Función</th></tr>
+            <tr><td>Router</td><td>Conecta redes diferentes y dirige el tráfico de datos.</td></tr>
+            <tr><td>Switch</td><td>Conecta dispositivos dentro de una misma red LAN.</td></tr>
+            <tr><td>Hub</td><td>Distribuye señales pero no las administra.</td></tr>
+            <tr><td>Access Point</td><td>Permite conexiones inalámbricas.</td></tr>
+        </table>
+
+        <h3>Protocolos de Comunicación</h3>
+        <ul>
+            <li><strong>TCP/IP:</strong> Base de Internet, define cómo los datos deben ser empaquetados, transmitidos y recibidos.</li>
+            <li><strong>HTTP/HTTPS:</strong> Protocolos para la transferencia de páginas web.</li>
+            <li><strong>FTP:</strong> Protocolo para transferencia de archivos.</li>
+            <li><strong>SMTP/POP3/IMAP:</strong> Protocolos de correo electrónico.</li>
+        </ul>
+
+        <h3>Ejemplo de configuración IP en Windows</h3>
+        <pre>
+1. Ir a Panel de control > Red e Internet > Centro de redes.
+2. Hacer clic en "Cambiar configuración del adaptador".
+3. Click derecho en la red activa > Propiedades.
+4. Seleccionar "Protocolo de Internet versión 4 (TCP/IPv4)" > Propiedades.
+5. Ingresar IP manualmente o configurar DHCP.
+        </pre>
+
+        <h3>Ejemplo de Red Simple</h3>
+        <p>Conexión de tres computadoras a un switch, que a su vez está conectado a un router.</p>
+        <img src="img-red-simple.png" alt="Red Simple" width="400">
+
+        <h3>Comandos de Redes</h3>
+        <ul>
+            <li><strong>ping:</strong> Verifica conectividad con otro host.</li>
+            <li><strong>ipconfig:</strong> Muestra la configuración IP actual.</li>
+            <li><strong>tracert:</strong> Rastrea la ruta a un destino.</li>
+            <li><strong>netstat:</strong> Muestra las conexiones activas.</li>
+        </ul>
+
+    </section>
+
+    <footer>
+        <p>© 2025 Manual Completo de HTML y Redes</p>
+    </footer>
+</body>
+</html>
